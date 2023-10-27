@@ -3,20 +3,18 @@
 
 /**
  * _atoi - converts a string to an integer
- * @s: string to be converted
+ * @s: input string to be converted
  *
- * Return: the int converted from the string
+ * Return: the integer converted from the string, or 0 if conversion fails
  */
 int _atoi(char *s)
 {
-	int i, d, n, len, f, digit;
-
-	i = 0;
-	d = 0;
-	n = 0;
-	len = 0;
-	f = 0;
-	digit = 0;
+	int i = 0;
+	int d = 0;
+	int n = 0;
+	int len = 0;
+	int f = 0;
+	int digit = 0;
 
 	while (s[len] != '\0')
 		len++;
@@ -47,9 +45,9 @@ int _atoi(char *s)
 }
 
 /**
- * main - multiplies two numbers
- * @argc: number of arguments
- * @argv: array of arguments
+ * main - Entry point
+ * @argc: The number of command-line arguments
+ * @argv: An array of command-line argument strings
  *
  * Return: 0 (Success), 1 (Error)
  */
@@ -65,7 +63,7 @@ int main(int argc, char *argv[])
 
 	num1 = _atoi(argv[1]);
 	num2 = _atoi(argv[2]);
-	result = num1 + num2;
+	result = num1 * num2;
 
 	printf("%d\n", result);
 

@@ -35,4 +35,7 @@ size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
 
 #endif
+<<<<<<< HEAD
 
+=======
+>>>>>>> 12abb87afefd099ce48825ae5dab5fcb6320ef40
